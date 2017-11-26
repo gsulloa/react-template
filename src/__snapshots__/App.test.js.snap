@@ -166,6 +166,7 @@ exports[`matches snapshot 1`] = `
                     "replace": [Function],
                   }
                 }
+                isAuthenticated={false}
                 location={
                   Object {
                     "hash": "",
@@ -174,6 +175,7 @@ exports[`matches snapshot 1`] = `
                     "state": undefined,
                   }
                 }
+                logout={[Function]}
                 match={
                   Object {
                     "isExact": true,
@@ -185,18 +187,18 @@ exports[`matches snapshot 1`] = `
               >
                 <styled.div>
                   <div
-                    className="sc-gzVnrw kugQOZ"
+                    className="sc-VigVT kpqotZ"
                   >
                     <styled.div>
                       <div
-                        className="sc-htoDjs jkXbuW"
+                        className="sc-jTzLTM gOqUIa"
                       >
                         <Styled(styled.div)>
                           <styled.div
-                            className="sc-iwsKbI jQhHGA"
+                            className="sc-jzJRlG enxKql"
                           >
                             <div
-                              className="sc-iwsKbI jQhHGA sc-dnqmqq cbdZBN"
+                              className="sc-jzJRlG enxKql sc-fjdhpX gIIVcx"
                             >
                               <NavLink
                                 exact={true}
@@ -213,12 +215,12 @@ exports[`matches snapshot 1`] = `
                                     to="/"
                                   >
                                     <Link
-                                      className="sc-gqjmRU iipNCQ"
+                                      className="sc-kAzzGY gOOAQV"
                                       replace={false}
                                       to="/"
                                     >
                                       <a
-                                        className="sc-gqjmRU iipNCQ"
+                                        className="sc-kAzzGY gOOAQV"
                                         href="/"
                                         onClick={[Function]}
                                       >
@@ -240,12 +242,12 @@ exports[`matches snapshot 1`] = `
                                     to="/other1"
                                   >
                                     <Link
-                                      className="sc-gqjmRU iipNCQ"
+                                      className="sc-kAzzGY gOOAQV"
                                       replace={false}
                                       to="/other1"
                                     >
                                       <a
-                                        className="sc-gqjmRU iipNCQ"
+                                        className="sc-kAzzGY gOOAQV"
                                         href="/other1"
                                         onClick={[Function]}
                                       >
@@ -267,12 +269,12 @@ exports[`matches snapshot 1`] = `
                                     to="/other2"
                                   >
                                     <Link
-                                      className="sc-gqjmRU iipNCQ"
+                                      className="sc-kAzzGY gOOAQV"
                                       replace={false}
                                       to="/other2"
                                     >
                                       <a
-                                        className="sc-gqjmRU iipNCQ"
+                                        className="sc-kAzzGY gOOAQV"
                                         href="/other2"
                                         onClick={[Function]}
                                       >
@@ -287,33 +289,35 @@ exports[`matches snapshot 1`] = `
                         </Styled(styled.div)>
                         <Styled(styled.div)>
                           <styled.div
-                            className="sc-gZMcBi giNnHm"
+                            className="sc-cSHVUG CAuLq"
                           >
                             <div
-                              className="sc-gZMcBi giNnHm sc-dnqmqq cbdZBN"
+                              className="sc-cSHVUG CAuLq sc-fjdhpX gIIVcx"
                             >
                               <NavLink
-                                label="Custom"
-                                to="/custom"
+                                exact={true}
+                                label="Login"
+                                to="/login"
                               >
                                 <Route
-                                  path="/custom"
+                                  exact={true}
+                                  path="/login"
                                 >
                                   <Styled(Link)
                                     className=""
-                                    to="/custom"
+                                    to="/login"
                                   >
                                     <Link
-                                      className="sc-gqjmRU iipNCQ"
+                                      className="sc-kAzzGY gOOAQV"
                                       replace={false}
-                                      to="/custom"
+                                      to="/login"
                                     >
                                       <a
-                                        className="sc-gqjmRU iipNCQ"
-                                        href="/custom"
+                                        className="sc-kAzzGY gOOAQV"
+                                        href="/login"
                                         onClick={[Function]}
                                       >
-                                        Custom
+                                        Login
                                       </a>
                                     </Link>
                                   </Styled(Link)>
@@ -348,7 +352,7 @@ exports[`matches snapshot 1`] = `
                       >
                         <styled.div>
                           <div
-                            className="sc-VigVT lnHQkM"
+                            className="sc-kgoBCf hIFMFY"
                           >
                             <HelmetWrapper
                               defer={true}
@@ -487,14 +491,14 @@ exports[`matches snapshot 1`] = `
                     </Switch>
                     <styled.div>
                       <div
-                        className="sc-jTzLTM hrEXlU"
+                        className="sc-kGXeez jHtSAs"
                       >
                         <Styled(styled.div)>
                           <styled.div
-                            className="sc-jzJRlG enxKql"
+                            className="sc-dxgOiQ hTjMfW"
                           >
                             <div
-                              className="sc-jzJRlG enxKql sc-fjdhpX gIIVcx"
+                              className="sc-dxgOiQ hTjMfW sc-kpOJdX jyuchV"
                             >
                               <FooterLink
                                 label="Google"
@@ -505,7 +509,7 @@ exports[`matches snapshot 1`] = `
                                   target="_blank"
                                 >
                                   <a
-                                    className="sc-kAzzGY hWxvCe"
+                                    className="sc-jKJlTe hyvdBm"
                                     href="https://google.com"
                                     target="_blank"
                                   >
@@ -518,10 +522,10 @@ exports[`matches snapshot 1`] = `
                         </Styled(styled.div)>
                         <Styled(styled.div)>
                           <styled.div
-                            className="sc-cSHVUG CAuLq"
+                            className="sc-ckVGcZ foYhJp"
                           >
                             <div
-                              className="sc-cSHVUG CAuLq sc-fjdhpX gIIVcx"
+                              className="sc-ckVGcZ foYhJp sc-kpOJdX jyuchV"
                             >
                               <FooterLink
                                 label="Github"
@@ -532,7 +536,7 @@ exports[`matches snapshot 1`] = `
                                   target="_blank"
                                 >
                                   <a
-                                    className="sc-kAzzGY hWxvCe"
+                                    className="sc-jKJlTe hyvdBm"
                                     href="https://github.com/negebauer/react-template"
                                     target="_blank"
                                   >
