@@ -1,6 +1,6 @@
 {
-  "short_name": "IIC2113",
-  "name": "IIC2113 Web app",
+  "short_name": "React App",
+  "name": "React App Boilerplate",
   "icons": [{
     "src": "favicon.ico",
     "sizes": "192x192",

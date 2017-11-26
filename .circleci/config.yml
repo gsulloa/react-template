@@ -5,7 +5,7 @@ defaults: &defaults
 
 version: 2
 jobs:
-  dependencies:
+  build:
     <<: *defaults
     steps:
       - checkout
@@ -53,13 +53,13 @@ workflows:
   version: 2
   workflow:
       jobs:
-        - dependencies
+        - build
         - test:
             requires:
-              - dependencies
+              - build
         - lint:
             requires:
-              - dependencies
+              - build
         - deploy:
             requires:
               - test
