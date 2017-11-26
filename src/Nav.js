@@ -5,7 +5,10 @@ import { Route as RouteDom, Link, Switch, withRouter } from "react-router-dom"
 import { Helmet } from "react-helmet"
 import styled from "styled-components"
 
+import { logoutUser } from "./redux/modules/authentication"
+
 import Home from "./screens/Home"
+import Login from "./screens/Login"
 import NotFound from "./screens/NotFound"
 
 import routes from "./routes"
@@ -49,6 +52,20 @@ const NavHref = styled(Link)`
   cursor: pointer;
   text-transform: uppercase;
 
+  :hover {
+    color: black;
+  }
+`
+const NavButton = styled.button`
+  padding: 0 12px;
+  color: ${props => (props.className === "active" ? "black" : "white")};
+  background: transparent;
+  text-decoration: none;
+  font-weight: lighter;
+  cursor: pointer;
+  box-shadow: none;
+  border: none;
+  font-size: 17px;
   :hover {
     color: black;
   }
@@ -138,12 +155,22 @@ FooterLink.propTypes = {
   label: PropTypes.string.isRequired,
 }
 
-const mapStateToProps = () => ({})
+const mapStateToProps = state => ({
+  isAuthenticated: state.authentication.isAuthenticated,
+})
 
-const mapDispatchToProps = {}
-
+const mapDispatchToProps = dispatch => ({
+  logout: () => dispatch(logoutUser()),
+})
 class Navigator extends Component {
-  render() {
+  static propTypes = {
+    logout: PropTypes.func,
+    isAuthenticated: PropTypes.bool,
+  }
+  logout = () => {
+    this.props.logout()
+  }
+  render = () => {
     return (
       <App>
         <Nav>
@@ -153,11 +180,16 @@ class Navigator extends Component {
             <NavLink to={routes.customPath("/other2")} label="Other 2" />
           </NavLeft>
           <NavRight>
-            <NavLink to={routes.customPath("/custom")} label="Custom" />
+            {this.props.isAuthenticated ? (
+              <NavButton onClick={this.logout}>Logout</NavButton>
+            ) : (
+              <NavLink to={routes.loginPath} label="Login" exact />
+            )}
           </NavRight>
         </Nav>
         <Switch>
           <Route exact path={routes.homePath} component={Home} />
+          <Route exact path={routes.loginPath} component={Login} />
           <Route component={NotFound} title="Not found" />
         </Switch>
         <Footer>
