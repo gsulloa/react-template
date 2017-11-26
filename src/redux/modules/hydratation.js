@@ -2,7 +2,7 @@ import { persistStore } from "redux-persist"
 import _ from "lodash/fp/object"
 
 // Actions
-export const HYDRATATION = "negebauer/hydratation/HYDRATATION"
+export const HYDRATATION = "hydratation/HYDRATATION"
 
 // Initial state
 const initialState = {
