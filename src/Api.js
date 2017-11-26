@@ -1,24 +1,38 @@
 import { devlog } from "./utils/log"
-const popsicle = require("popsicle")
+import axios from "axios"
 
 export default class Api {
   constructor(baseUrl) {
     this.baseUrl = baseUrl
   }
-
   request = async request => {
     try {
       const response = await request
-      return JSON.parse(response.body)
+      return response.data
     } catch (err) {
-      devlog("ERROR API", err)
-      return err
+      devlog("API error", err)
+      return { error: "API", data: err }
     }
   }
 
   url = url => `${this.baseUrl}${url}`
-
-  GET = async url => this.request(popsicle.get(this.url(url)))
-
-  POST = async (url, body) => this.request(popsicle.post(this.url(url), body))
+  generateHeader = () => ({
+    "Content-Type": "application/json",
+    Authorization: this.token ? `Bearer ${this.token}` : undefined,
+  })
+  generateInstance = () => {
+    return axios.create({
+      baseURL: this.baseUrl,
+      headers: this.generateHeader(),
+    })
+  }
+  get = async (url, params) =>
+    this.request(this.generateInstance().get(url, { params }));
+  post = async (url, body) =>
+    this.request(this.generateInstance().post(url, body))
+  del = async url => this.request(this.generateInstance().delete(url))
+  put = async (url, body) =>
+    this.request(this.generateInstance().put(url, body))
+  patch = async (url, body) =>
+    this.request(this.generateInstance().patch(url, body))
 }
