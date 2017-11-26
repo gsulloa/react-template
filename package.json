@@ -14,10 +14,10 @@
     "deploy:github": "yarn build; gh-pages -d build -m 'Github site deploy'"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "eslint-plugin-react": "^7.3.0",
     "history": "^4.6.3",
     "lodash": "^4.17.4",
-    "popsicle": "^9.1.0",
     "prop-types": "^15.5.10",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
