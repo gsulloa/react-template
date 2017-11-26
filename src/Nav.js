@@ -26,7 +26,7 @@ const Nav = styled.div`
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  background-color: Black;
+  background-color: #3f51b5;
   color: White;
 `
 
@@ -41,12 +41,14 @@ const NavRight = styled(NavSection)``
 
 const NavHref = styled(Link)`
   padding: 0 12px;
-  color: ${props => (props.className === "active" ? "#00bfff" : "white")};
+  color: ${props => (props.className === "active" ? "black" : "white")};
   text-decoration: none;
   font-weight: lighter;
   cursor: pointer;
+  text-transform: uppercase;
+
   :hover {
-    color: #00bfff;
+    color: black;
   }
 `
 

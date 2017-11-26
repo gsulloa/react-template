@@ -4,7 +4,7 @@ import { Link as RouterLink } from "react-router-dom"
 import styled from "styled-components"
 
 const linkColor = "#00bfff"
-const linkColorHover = "#1e90ff"
+const linkColorHover = "black"
 
 export const LinkAction = styled.div`
   color: ${linkColor};
@@ -31,7 +31,7 @@ export const LinkHref = styled.a`
 export const LinkNav = styled(RouterLink)`
   color: ${linkColor};
   text-decoration: none;
-  font-weight: lighter;
+  font-weight: bold;
   cursor: pointer;
 
   :hover {

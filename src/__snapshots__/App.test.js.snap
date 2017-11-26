@@ -189,7 +189,7 @@ exports[`matches snapshot 1`] = `
                   >
                     <styled.div>
                       <div
-                        className="sc-htoDjs ePHjYV"
+                        className="sc-htoDjs jkXbuW"
                       >
                         <Styled(styled.div)>
                           <styled.div
@@ -213,12 +213,12 @@ exports[`matches snapshot 1`] = `
                                     to="/"
                                   >
                                     <Link
-                                      className="sc-gqjmRU eNtcLP"
+                                      className="sc-gqjmRU iipNCQ"
                                       replace={false}
                                       to="/"
                                     >
                                       <a
-                                        className="sc-gqjmRU eNtcLP"
+                                        className="sc-gqjmRU iipNCQ"
                                         href="/"
                                         onClick={[Function]}
                                       >
@@ -240,12 +240,12 @@ exports[`matches snapshot 1`] = `
                                     to="/other1"
                                   >
                                     <Link
-                                      className="sc-gqjmRU eNtcLP"
+                                      className="sc-gqjmRU iipNCQ"
                                       replace={false}
                                       to="/other1"
                                     >
                                       <a
-                                        className="sc-gqjmRU eNtcLP"
+                                        className="sc-gqjmRU iipNCQ"
                                         href="/other1"
                                         onClick={[Function]}
                                       >
@@ -267,12 +267,12 @@ exports[`matches snapshot 1`] = `
                                     to="/other2"
                                   >
                                     <Link
-                                      className="sc-gqjmRU eNtcLP"
+                                      className="sc-gqjmRU iipNCQ"
                                       replace={false}
                                       to="/other2"
                                     >
                                       <a
-                                        className="sc-gqjmRU eNtcLP"
+                                        className="sc-gqjmRU iipNCQ"
                                         href="/other2"
                                         onClick={[Function]}
                                       >
@@ -304,12 +304,12 @@ exports[`matches snapshot 1`] = `
                                     to="/go"
                                   >
                                     <Link
-                                      className="sc-gqjmRU eNtcLP"
+                                      className="sc-gqjmRU iipNCQ"
                                       replace={false}
                                       to="/go"
                                     >
                                       <a
-                                        className="sc-gqjmRU eNtcLP"
+                                        className="sc-gqjmRU iipNCQ"
                                         href="/go"
                                         onClick={[Function]}
                                       >
