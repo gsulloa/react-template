@@ -145,6 +145,7 @@ exports[`matches snapshot 1`] = `
                     "replace": [Function],
                   }
                 }
+                isAuthenticated={false}
                 location={
                   Object {
                     "hash": "",
@@ -153,6 +154,7 @@ exports[`matches snapshot 1`] = `
                     "state": undefined,
                   }
                 }
+                logout={[Function]}
                 match={
                   Object {
                     "isExact": true,
