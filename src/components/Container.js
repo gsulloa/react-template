@@ -16,4 +16,21 @@ export const ContainerCenter = styled(Container)`
   text-align: center;
 `
 
+export const Row = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+`
+export const SpacedRow = styled(Row)`
+  justify-content: space-between;
+`
+
+export const Col = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+`
+
 export default Container

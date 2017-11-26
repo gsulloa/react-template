@@ -1,6 +1,7 @@
 import { push } from "react-router-redux"
 import { newError } from "./error"
 import { doFetch } from "./fetching"
+import { devlog } from "../../utils/log"
 import routes from "../../routes"
 
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS"
@@ -46,7 +47,11 @@ export default function authentication(state = initialState, action) {
    api Fetchs
  */
 function login(api, body) {
-  return api.post("/session", body)
+  return new Promise(resolve => {
+    devlog("Creds send: ", body)
+    return resolve({ token: "jsonweb.eyJ1c2VySWQiOjF9.token" })
+  })
+  //return api.post("/session", body)
 }
 /*
   before Actions
