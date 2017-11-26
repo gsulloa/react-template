@@ -11,14 +11,13 @@ export default class Api {
       return response.data
     } catch (err) {
       devlog("API error", err)
-      return { error: "API", data: err }
+      return err
     }
   }
 
   url = url => `${this.baseUrl}${url}`
   generateHeader = () => ({
     "Content-Type": "application/json",
-    Authorization: this.token ? `Bearer ${this.token}` : undefined,
   })
   generateInstance = () => {
     return axios.create({
