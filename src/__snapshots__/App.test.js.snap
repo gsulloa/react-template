@@ -293,27 +293,27 @@ exports[`matches snapshot 1`] = `
                               className="sc-gZMcBi giNnHm sc-dnqmqq cbdZBN"
                             >
                               <NavLink
-                                label="Accesos"
-                                to="/go"
+                                label="Custom"
+                                to="/custom"
                               >
                                 <Route
-                                  path="/go"
+                                  path="/custom"
                                 >
                                   <Styled(Link)
                                     className=""
-                                    to="/go"
+                                    to="/custom"
                                   >
                                     <Link
                                       className="sc-gqjmRU iipNCQ"
                                       replace={false}
-                                      to="/go"
+                                      to="/custom"
                                     >
                                       <a
                                         className="sc-gqjmRU iipNCQ"
-                                        href="/go"
+                                        href="/custom"
                                         onClick={[Function]}
                                       >
-                                        Accesos
+                                        Custom
                                       </a>
                                     </Link>
                                   </Styled(Link)>
