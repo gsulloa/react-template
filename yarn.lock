@@ -6359,6 +6359,10 @@ statuses@~1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.3.1.tgz#faf51b9eb74aaef3b3acf4ad5f61abf24cb7b93e"
 
+storage-memory@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/storage-memory/-/storage-memory-0.0.2.tgz#6b8a2b864772773c47ef40880e3443a2373e82bd"
+
 stream-browserify@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/stream-browserify/-/stream-browserify-2.0.1.tgz#66266ee5f9bdb9940a4e4514cafb43bb71e5c9db"

@@ -18,7 +18,10 @@ export class App extends Component {
     devlog("App", this.state, this.props)
     return (
       <Provider store={this.props.store}>
-        <PersistGate loading={null} persistor={this.props.persistor}>
+        <PersistGate
+          loading={<h1>Loading</h1>}
+          persistor={this.props.persistor}
+        >
           <ConnectedRouter history={this.props.history}>
             <Nav />
           </ConnectedRouter>
