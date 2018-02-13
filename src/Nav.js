@@ -8,6 +8,8 @@ import styled from "styled-components"
 import Home from "./screens/Home"
 import NotFound from "./screens/NotFound"
 
+import routes from "./routes"
+
 const siteTitle = title => (title ? `RT | ${title}` : "React Template")
 
 const App = styled.div`
@@ -26,7 +28,7 @@ const Nav = styled.div`
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  background-color: Black;
+  background-color: #3f51b5;
   color: White;
 `
 
@@ -41,12 +43,14 @@ const NavRight = styled(NavSection)``
 
 const NavHref = styled(Link)`
   padding: 0 12px;
-  color: ${props => (props.className === "active" ? "#00bfff" : "white")};
+  color: ${props => (props.className === "active" ? "black" : "white")};
   text-decoration: none;
   font-weight: lighter;
   cursor: pointer;
+  text-transform: uppercase;
+
   :hover {
-    color: #00bfff;
+    color: black;
   }
 `
 
@@ -144,16 +148,16 @@ class Navigator extends Component {
       <App>
         <Nav>
           <NavLeft>
-            <NavLink to="/" label="React Template" exact ignore />
-            <NavLink to="/other1" label="Other 1" />
-            <NavLink to="/other2" label="Other 2" />
+            <NavLink to={routes.homePath} label="React Template" exact ignore />
+            <NavLink to={routes.customPath("/other1")} label="Other 1" />
+            <NavLink to={routes.customPath("/other2")} label="Other 2" />
           </NavLeft>
           <NavRight>
-            <NavLink to="/go" label="Accesos" />
+            <NavLink to={routes.customPath("/custom")} label="Custom" />
           </NavRight>
         </Nav>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path={routes.homePath} component={Home} />
           <Route component={NotFound} title="Not found" />
         </Switch>
         <Footer>

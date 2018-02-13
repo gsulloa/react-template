@@ -22,20 +22,17 @@ exports[`matches snapshot 1`] = `
       "replace": [Function],
     }
   }
-  hydratation={
+  persistor={
     Object {
-      "done": true,
-    }
-  }
-  hydrate={[Function]}
-  options={
-    Object {
-      "hydratation": Object {
-        "blacklist": Array [
-          "hydratation",
-          "router",
-        ],
-      },
+      "dispatch": [Function],
+      "flush": [Function],
+      "getState": [Function],
+      "pause": [Function],
+      "persist": [Function],
+      "purge": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
     }
   }
   store={
@@ -59,29 +56,27 @@ exports[`matches snapshot 1`] = `
       }
     }
   >
-    <ConnectedRouter
-      history={
+    <PersistGate
+      loading={
+        <h1>
+          Loading
+        </h1>
+      }
+      persistor={
         Object {
-          "action": "POP",
-          "block": [Function],
-          "createHref": [Function],
-          "go": [Function],
-          "goBack": [Function],
-          "goForward": [Function],
-          "length": 1,
-          "listen": [Function],
-          "location": Object {
-            "hash": "",
-            "pathname": "/",
-            "search": "",
-            "state": undefined,
-          },
-          "push": [Function],
-          "replace": [Function],
+          "dispatch": [Function],
+          "flush": [Function],
+          "getState": [Function],
+          "pause": [Function],
+          "persist": [Function],
+          "purge": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
         }
       }
     >
-      <Router
+      <ConnectedRouter
         history={
           Object {
             "action": "POP",
@@ -103,49 +98,33 @@ exports[`matches snapshot 1`] = `
           }
         }
       >
-        <withRouter(Connect(Navigator))>
-          <Route
-            render={[Function]}
-          >
-            <Connect(Navigator)
-              history={
-                Object {
-                  "action": "POP",
-                  "block": [Function],
-                  "createHref": [Function],
-                  "go": [Function],
-                  "goBack": [Function],
-                  "goForward": [Function],
-                  "length": 1,
-                  "listen": [Function],
-                  "location": Object {
-                    "hash": "",
-                    "pathname": "/",
-                    "search": "",
-                    "state": undefined,
-                  },
-                  "push": [Function],
-                  "replace": [Function],
-                }
-              }
-              location={
-                Object {
-                  "hash": "",
-                  "pathname": "/",
-                  "search": "",
-                  "state": undefined,
-                }
-              }
-              match={
-                Object {
-                  "isExact": true,
-                  "params": Object {},
-                  "path": "/",
-                  "url": "/",
-                }
-              }
+        <Router
+          history={
+            Object {
+              "action": "POP",
+              "block": [Function],
+              "createHref": [Function],
+              "go": [Function],
+              "goBack": [Function],
+              "goForward": [Function],
+              "length": 1,
+              "listen": [Function],
+              "location": Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              },
+              "push": [Function],
+              "replace": [Function],
+            }
+          }
+        >
+          <withRouter(Connect(Navigator))>
+            <Route
+              render={[Function]}
             >
-              <Navigator
+              <Connect(Navigator)
                 history={
                   Object {
                     "action": "POP",
@@ -183,233 +162,240 @@ exports[`matches snapshot 1`] = `
                   }
                 }
               >
-                <styled.div>
-                  <div
-                    className="sc-gzVnrw kugQOZ"
-                  >
-                    <styled.div>
-                      <div
-                        className="sc-htoDjs ePHjYV"
-                      >
-                        <Styled(styled.div)>
-                          <styled.div
-                            className="sc-iwsKbI jQhHGA"
-                          >
-                            <div
-                              className="sc-iwsKbI jQhHGA sc-dnqmqq cbdZBN"
+                <Navigator
+                  history={
+                    Object {
+                      "action": "POP",
+                      "block": [Function],
+                      "createHref": [Function],
+                      "go": [Function],
+                      "goBack": [Function],
+                      "goForward": [Function],
+                      "length": 1,
+                      "listen": [Function],
+                      "location": Object {
+                        "hash": "",
+                        "pathname": "/",
+                        "search": "",
+                        "state": undefined,
+                      },
+                      "push": [Function],
+                      "replace": [Function],
+                    }
+                  }
+                  location={
+                    Object {
+                      "hash": "",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    }
+                  }
+                  match={
+                    Object {
+                      "isExact": true,
+                      "params": Object {},
+                      "path": "/",
+                      "url": "/",
+                    }
+                  }
+                >
+                  <styled.div>
+                    <div
+                      className="sc-gzVnrw kugQOZ"
+                    >
+                      <styled.div>
+                        <div
+                          className="sc-htoDjs jkXbuW"
+                        >
+                          <Styled(styled.div)>
+                            <styled.div
+                              className="sc-iwsKbI jQhHGA"
                             >
-                              <NavLink
-                                exact={true}
-                                ignore={true}
-                                label="React Template"
-                                to="/"
+                              <div
+                                className="sc-iwsKbI jQhHGA sc-dnqmqq cbdZBN"
                               >
-                                <Route
+                                <NavLink
                                   exact={true}
-                                  path="/"
+                                  ignore={true}
+                                  label="React Template"
+                                  to="/"
                                 >
-                                  <Styled(Link)
-                                    className=""
-                                    to="/"
+                                  <Route
+                                    exact={true}
+                                    path="/"
                                   >
-                                    <Link
-                                      className="sc-gqjmRU eNtcLP"
-                                      replace={false}
+                                    <Styled(Link)
+                                      className=""
                                       to="/"
                                     >
-                                      <a
-                                        className="sc-gqjmRU eNtcLP"
-                                        href="/"
-                                        onClick={[Function]}
+                                      <Link
+                                        className="sc-gqjmRU iipNCQ"
+                                        replace={false}
+                                        to="/"
                                       >
-                                        React Template
-                                      </a>
-                                    </Link>
-                                  </Styled(Link)>
-                                </Route>
-                              </NavLink>
-                              <NavLink
-                                label="Other 1"
-                                to="/other1"
-                              >
-                                <Route
-                                  path="/other1"
+                                        <a
+                                          className="sc-gqjmRU iipNCQ"
+                                          href="/"
+                                          onClick={[Function]}
+                                        >
+                                          React Template
+                                        </a>
+                                      </Link>
+                                    </Styled(Link)>
+                                  </Route>
+                                </NavLink>
+                                <NavLink
+                                  label="Other 1"
+                                  to="/other1"
                                 >
-                                  <Styled(Link)
-                                    className=""
-                                    to="/other1"
+                                  <Route
+                                    path="/other1"
                                   >
-                                    <Link
-                                      className="sc-gqjmRU eNtcLP"
-                                      replace={false}
+                                    <Styled(Link)
+                                      className=""
                                       to="/other1"
                                     >
-                                      <a
-                                        className="sc-gqjmRU eNtcLP"
-                                        href="/other1"
-                                        onClick={[Function]}
+                                      <Link
+                                        className="sc-gqjmRU iipNCQ"
+                                        replace={false}
+                                        to="/other1"
                                       >
-                                        Other 1
-                                      </a>
-                                    </Link>
-                                  </Styled(Link)>
-                                </Route>
-                              </NavLink>
-                              <NavLink
-                                label="Other 2"
-                                to="/other2"
-                              >
-                                <Route
-                                  path="/other2"
+                                        <a
+                                          className="sc-gqjmRU iipNCQ"
+                                          href="/other1"
+                                          onClick={[Function]}
+                                        >
+                                          Other 1
+                                        </a>
+                                      </Link>
+                                    </Styled(Link)>
+                                  </Route>
+                                </NavLink>
+                                <NavLink
+                                  label="Other 2"
+                                  to="/other2"
                                 >
-                                  <Styled(Link)
-                                    className=""
-                                    to="/other2"
+                                  <Route
+                                    path="/other2"
                                   >
-                                    <Link
-                                      className="sc-gqjmRU eNtcLP"
-                                      replace={false}
+                                    <Styled(Link)
+                                      className=""
                                       to="/other2"
                                     >
-                                      <a
-                                        className="sc-gqjmRU eNtcLP"
-                                        href="/other2"
-                                        onClick={[Function]}
+                                      <Link
+                                        className="sc-gqjmRU iipNCQ"
+                                        replace={false}
+                                        to="/other2"
                                       >
-                                        Other 2
-                                      </a>
-                                    </Link>
-                                  </Styled(Link)>
-                                </Route>
-                              </NavLink>
-                            </div>
-                          </styled.div>
-                        </Styled(styled.div)>
-                        <Styled(styled.div)>
-                          <styled.div
-                            className="sc-gZMcBi giNnHm"
-                          >
-                            <div
-                              className="sc-gZMcBi giNnHm sc-dnqmqq cbdZBN"
+                                        <a
+                                          className="sc-gqjmRU iipNCQ"
+                                          href="/other2"
+                                          onClick={[Function]}
+                                        >
+                                          Other 2
+                                        </a>
+                                      </Link>
+                                    </Styled(Link)>
+                                  </Route>
+                                </NavLink>
+                              </div>
+                            </styled.div>
+                          </Styled(styled.div)>
+                          <Styled(styled.div)>
+                            <styled.div
+                              className="sc-gZMcBi giNnHm"
                             >
-                              <NavLink
-                                label="Accesos"
-                                to="/go"
+                              <div
+                                className="sc-gZMcBi giNnHm sc-dnqmqq cbdZBN"
                               >
-                                <Route
-                                  path="/go"
+                                <NavLink
+                                  label="Custom"
+                                  to="/custom"
                                 >
-                                  <Styled(Link)
-                                    className=""
-                                    to="/go"
+                                  <Route
+                                    path="/custom"
                                   >
-                                    <Link
-                                      className="sc-gqjmRU eNtcLP"
-                                      replace={false}
-                                      to="/go"
+                                    <Styled(Link)
+                                      className=""
+                                      to="/custom"
                                     >
-                                      <a
-                                        className="sc-gqjmRU eNtcLP"
-                                        href="/go"
-                                        onClick={[Function]}
+                                      <Link
+                                        className="sc-gqjmRU iipNCQ"
+                                        replace={false}
+                                        to="/custom"
                                       >
-                                        Accesos
-                                      </a>
-                                    </Link>
-                                  </Styled(Link)>
-                                </Route>
-                              </NavLink>
-                            </div>
-                          </styled.div>
-                        </Styled(styled.div)>
-                      </div>
-                    </styled.div>
-                    <Switch>
-                      <Route
-                        component={[Function]}
-                        computedMatch={
-                          Object {
-                            "isExact": true,
-                            "params": Object {},
-                            "path": "/",
-                            "url": "/",
+                                        <a
+                                          className="sc-gqjmRU iipNCQ"
+                                          href="/custom"
+                                          onClick={[Function]}
+                                        >
+                                          Custom
+                                        </a>
+                                      </Link>
+                                    </Styled(Link)>
+                                  </Route>
+                                </NavLink>
+                              </div>
+                            </styled.div>
+                          </Styled(styled.div)>
+                        </div>
+                      </styled.div>
+                      <Switch>
+                        <Route
+                          component={[Function]}
+                          computedMatch={
+                            Object {
+                              "isExact": true,
+                              "params": Object {},
+                              "path": "/",
+                              "url": "/",
+                            }
                           }
-                        }
-                        exact={true}
-                        location={
-                          Object {
-                            "hash": "",
-                            "pathname": "/",
-                            "search": "",
-                            "state": undefined,
+                          exact={true}
+                          location={
+                            Object {
+                              "hash": "",
+                              "pathname": "/",
+                              "search": "",
+                              "state": undefined,
+                            }
                           }
-                        }
-                        path="/"
-                      >
-                        <styled.div>
-                          <div
-                            className="sc-VigVT lnHQkM"
-                          >
-                            <HelmetWrapper
-                              defer={true}
-                              encodeSpecialCharacters={true}
+                          path="/"
+                        >
+                          <styled.div>
+                            <div
+                              className="sc-VigVT lnHQkM"
                             >
-                              <SideEffect(NullComponent)
+                              <HelmetWrapper
                                 defer={true}
                                 encodeSpecialCharacters={true}
-                                title="React Template"
-                                titleAttributes={Object {}}
                               >
-                                <NullComponent
+                                <SideEffect(NullComponent)
                                   defer={true}
                                   encodeSpecialCharacters={true}
                                   title="React Template"
                                   titleAttributes={Object {}}
-                                />
-                              </SideEffect(NullComponent)>
-                            </HelmetWrapper>
-                            <Route
-                              component={[Function]}
-                              computedMatch={
-                                Object {
-                                  "isExact": true,
-                                  "params": Object {},
-                                  "path": "/",
-                                  "url": "/",
-                                }
-                              }
-                              exact={true}
-                              location={
-                                Object {
-                                  "hash": "",
-                                  "pathname": "/",
-                                  "search": "",
-                                  "state": undefined,
-                                }
-                              }
-                              path="/"
-                            >
-                              <Connect(Home)
-                                history={
+                                >
+                                  <NullComponent
+                                    defer={true}
+                                    encodeSpecialCharacters={true}
+                                    title="React Template"
+                                    titleAttributes={Object {}}
+                                  />
+                                </SideEffect(NullComponent)>
+                              </HelmetWrapper>
+                              <Route
+                                component={[Function]}
+                                computedMatch={
                                   Object {
-                                    "action": "POP",
-                                    "block": [Function],
-                                    "createHref": [Function],
-                                    "go": [Function],
-                                    "goBack": [Function],
-                                    "goForward": [Function],
-                                    "length": 1,
-                                    "listen": [Function],
-                                    "location": Object {
-                                      "hash": "",
-                                      "pathname": "/",
-                                      "search": "",
-                                      "state": undefined,
-                                    },
-                                    "push": [Function],
-                                    "replace": [Function],
+                                    "isExact": true,
+                                    "params": Object {},
+                                    "path": "/",
+                                    "url": "/",
                                   }
                                 }
+                                exact={true}
                                 location={
                                   Object {
                                     "hash": "",
@@ -418,16 +404,9 @@ exports[`matches snapshot 1`] = `
                                     "state": undefined,
                                   }
                                 }
-                                match={
-                                  Object {
-                                    "isExact": true,
-                                    "params": Object {},
-                                    "path": "/",
-                                    "url": "/",
-                                  }
-                                }
+                                path="/"
                               >
-                                <Home
+                                <Connect(Home)
                                   history={
                                     Object {
                                       "action": "POP",
@@ -465,94 +444,133 @@ exports[`matches snapshot 1`] = `
                                     }
                                   }
                                 >
-                                  <Styled(styled.div)>
-                                    <styled.div
-                                      className="sc-htpNat hTNTjW"
-                                    >
-                                      <div
-                                        className="sc-htpNat hTNTjW sc-bdVaJa cljovs"
+                                  <Home
+                                    history={
+                                      Object {
+                                        "action": "POP",
+                                        "block": [Function],
+                                        "createHref": [Function],
+                                        "go": [Function],
+                                        "goBack": [Function],
+                                        "goForward": [Function],
+                                        "length": 1,
+                                        "listen": [Function],
+                                        "location": Object {
+                                          "hash": "",
+                                          "pathname": "/",
+                                          "search": "",
+                                          "state": undefined,
+                                        },
+                                        "push": [Function],
+                                        "replace": [Function],
+                                      }
+                                    }
+                                    location={
+                                      Object {
+                                        "hash": "",
+                                        "pathname": "/",
+                                        "search": "",
+                                        "state": undefined,
+                                      }
+                                    }
+                                    match={
+                                      Object {
+                                        "isExact": true,
+                                        "params": Object {},
+                                        "path": "/",
+                                        "url": "/",
+                                      }
+                                    }
+                                  >
+                                    <Styled(styled.div)>
+                                      <styled.div
+                                        className="sc-htpNat hTNTjW"
                                       >
-                                        <h1>
-                                          React Template
-                                        </h1>
-                                      </div>
-                                    </styled.div>
-                                  </Styled(styled.div)>
-                                </Home>
-                              </Connect(Home)>
-                            </Route>
-                          </div>
-                        </styled.div>
-                      </Route>
-                    </Switch>
-                    <styled.div>
-                      <div
-                        className="sc-jTzLTM hrEXlU"
-                      >
-                        <Styled(styled.div)>
-                          <styled.div
-                            className="sc-jzJRlG enxKql"
-                          >
-                            <div
-                              className="sc-jzJRlG enxKql sc-fjdhpX gIIVcx"
+                                        <div
+                                          className="sc-htpNat hTNTjW sc-bdVaJa cljovs"
+                                        >
+                                          <h1>
+                                            React Template
+                                          </h1>
+                                        </div>
+                                      </styled.div>
+                                    </Styled(styled.div)>
+                                  </Home>
+                                </Connect(Home)>
+                              </Route>
+                            </div>
+                          </styled.div>
+                        </Route>
+                      </Switch>
+                      <styled.div>
+                        <div
+                          className="sc-jTzLTM hrEXlU"
+                        >
+                          <Styled(styled.div)>
+                            <styled.div
+                              className="sc-jzJRlG enxKql"
                             >
-                              <FooterLink
-                                label="Google"
-                                to="https://google.com"
+                              <div
+                                className="sc-jzJRlG enxKql sc-fjdhpX gIIVcx"
                               >
-                                <styled.a
-                                  href="https://google.com"
-                                  target="_blank"
+                                <FooterLink
+                                  label="Google"
+                                  to="https://google.com"
                                 >
-                                  <a
-                                    className="sc-kAzzGY hWxvCe"
+                                  <styled.a
                                     href="https://google.com"
                                     target="_blank"
                                   >
-                                    Google
-                                  </a>
-                                </styled.a>
-                              </FooterLink>
-                            </div>
-                          </styled.div>
-                        </Styled(styled.div)>
-                        <Styled(styled.div)>
-                          <styled.div
-                            className="sc-cSHVUG CAuLq"
-                          >
-                            <div
-                              className="sc-cSHVUG CAuLq sc-fjdhpX gIIVcx"
+                                    <a
+                                      className="sc-kAzzGY hWxvCe"
+                                      href="https://google.com"
+                                      target="_blank"
+                                    >
+                                      Google
+                                    </a>
+                                  </styled.a>
+                                </FooterLink>
+                              </div>
+                            </styled.div>
+                          </Styled(styled.div)>
+                          <Styled(styled.div)>
+                            <styled.div
+                              className="sc-cSHVUG CAuLq"
                             >
-                              <FooterLink
-                                label="Github"
-                                to="https://github.com/negebauer/react-template"
+                              <div
+                                className="sc-cSHVUG CAuLq sc-fjdhpX gIIVcx"
                               >
-                                <styled.a
-                                  href="https://github.com/negebauer/react-template"
-                                  target="_blank"
+                                <FooterLink
+                                  label="Github"
+                                  to="https://github.com/negebauer/react-template"
                                 >
-                                  <a
-                                    className="sc-kAzzGY hWxvCe"
+                                  <styled.a
                                     href="https://github.com/negebauer/react-template"
                                     target="_blank"
                                   >
-                                    Github
-                                  </a>
-                                </styled.a>
-                              </FooterLink>
-                            </div>
-                          </styled.div>
-                        </Styled(styled.div)>
-                      </div>
-                    </styled.div>
-                  </div>
-                </styled.div>
-              </Navigator>
-            </Connect(Navigator)>
-          </Route>
-        </withRouter(Connect(Navigator))>
-      </Router>
-    </ConnectedRouter>
+                                    <a
+                                      className="sc-kAzzGY hWxvCe"
+                                      href="https://github.com/negebauer/react-template"
+                                      target="_blank"
+                                    >
+                                      Github
+                                    </a>
+                                  </styled.a>
+                                </FooterLink>
+                              </div>
+                            </styled.div>
+                          </Styled(styled.div)>
+                        </div>
+                      </styled.div>
+                    </div>
+                  </styled.div>
+                </Navigator>
+              </Connect(Navigator)>
+            </Route>
+          </withRouter(Connect(Navigator))>
+        </Router>
+      </ConnectedRouter>
+    </PersistGate>
   </Provider>
 </App>
 `;

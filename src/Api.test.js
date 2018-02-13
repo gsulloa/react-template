@@ -33,13 +33,22 @@ describe("API", () => {
     const post = await api.patch("/posts/1", data)
     expect(post).toMatchObject(data)
   })
+  it("puts", async () => {
+    const data = {
+      userId: 1,
+      title: "foo",
+      content: "bar",
+    }
+    const post = await api.put("/posts/1", data)
+    expect(post).toMatchObject(data)
+  })
   it("delete", async () => {
     const post = await api.del("/posts/1")
     expect(post).not.toBeInstanceOf(Error)
   })
-  /*it("fails on bad url", async () => {
+  it("fails on not found url", async () => {
     const api = new Api("")
-    const err = await api.get("/")
+    const err = await api.get("asd/a")
     expect(err).toBeInstanceOf(Error)
-  })*/
+  })
 })
