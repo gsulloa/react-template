@@ -30,7 +30,6 @@
     "redux-logger": "^3.0.6",
     "redux-persist": "^5.7.2",
     "redux-promise-middleware": "4.4.2",
-    "redux-reset": "^0.3.0",
     "redux-thunk": "^2.2.0",
     "reselect": "^3.0.1",
     "styled-components": "^2.1.2"

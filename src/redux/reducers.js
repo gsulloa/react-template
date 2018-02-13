@@ -17,7 +17,14 @@ function configureReducers(storage) {
     authentication,
   })
 
-  const persistedReducer = persistReducer(persistConfig, combinedReducer)
+  const rootReducer = (state, action) => {
+    if (action.type === "RESET") {
+      state = undefined
+    }
+    return combinedReducer(state, action)
+  }
+
+  const persistedReducer = persistReducer(persistConfig, rootReducer)
   return persistedReducer
 }
 

@@ -4,7 +4,6 @@ import logger from "redux-logger"
 import promiseMiddleware from "redux-promise-middleware"
 import { persistStore } from "redux-persist"
 import { routerMiddleware } from "react-router-redux"
-import reduxReset from "redux-reset"
 
 import reducers from "./reducers"
 import storage from "redux-persist/lib/storage" // defaults to localStorage for web and AsyncStorage for react-native
@@ -28,7 +27,7 @@ export default function configureStore(
   }
 
   // Setup middlewares and enhancers
-  const enhancer = compose(applyMiddleware(...middleware), reduxReset())
+  const enhancer = compose(applyMiddleware(...middleware))
 
   // Create redux store
   const store = createStore(reducers(customStorage), initialState, enhancer)
