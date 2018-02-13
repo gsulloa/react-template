@@ -6,11 +6,13 @@ import { persistStore } from "redux-persist"
 import { routerMiddleware } from "react-router-redux"
 
 import reducers from "./reducers"
+import storage from "redux-persist/lib/storage" // defaults to localStorage for web and AsyncStorage for react-native
 
 export default function configureStore(
   initialState = {},
   history = {},
-  { api } = {}
+  { api } = {},
+  customStorage = storage
 ) {
   const shouldLog = process.env.NODE_ENV === "development"
 
@@ -28,7 +30,7 @@ export default function configureStore(
   const enhancer = compose(applyMiddleware(...middleware))
 
   // Create redux store
-  const store = createStore(reducers, initialState, enhancer)
+  const store = createStore(reducers(customStorage), initialState, enhancer)
   const persistor = persistStore(store)
 
   return { store, persistor }
