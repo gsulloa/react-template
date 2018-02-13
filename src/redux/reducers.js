@@ -2,6 +2,7 @@ import { combineReducers } from "redux"
 import { persistReducer } from "redux-persist"
 
 import router from "./modules/router"
+import authentication from "./modules/authentication"
 
 function configureReducers(storage) {
   const persistConfig = {
@@ -13,6 +14,7 @@ function configureReducers(storage) {
 
   const combinedReducer = combineReducers({
     router,
+    authentication,
   })
 
   const persistedReducer = persistReducer(persistConfig, combinedReducer)
