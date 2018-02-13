@@ -21,12 +21,4 @@ function configureReducers(storage) {
   return persistedReducer
 }
 
-// const rootReducer = (state, action) => {
-//   if (action.type === "CLEAR_STORE") {
-//     const { hydratation } = state
-//     state = { hydratation }
-//   }
-//   return reducer(state, action)
-// }
-
 export default configureReducers
