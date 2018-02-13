@@ -5,43 +5,27 @@ import { ConnectedRouter } from "react-router-redux"
 
 import { devlog } from "./utils/log"
 import Nav from "./Nav"
-import { hydrate } from "./redux/modules/hydratation"
-
-const mapStateToProps = state => ({
-  hydratation: state.hydratation,
-})
-
-const mapDispatchToProps = {
-  hydrate,
-}
+import { PersistGate } from "redux-persist/integration/react"
 
 export class App extends Component {
   static propTypes = {
     store: PropTypes.object.isRequired,
     history: PropTypes.object.isRequired,
-    hydratation: PropTypes.object.isRequired,
-    hydrate: PropTypes.func.isRequired,
-    options: PropTypes.object,
-  }
-
-  componentWillMount() {
-    const { store, hydrate, options } = this.props
-    hydrate(store, options.hydratation)
+    persistor: PropTypes.object.isRequired,
   }
 
   render() {
     devlog("App", this.state, this.props)
-    if (!this.props.hydratation.done) {
-      return null
-    }
     return (
       <Provider store={this.props.store}>
-        <ConnectedRouter history={this.props.history}>
-          <Nav />
-        </ConnectedRouter>
+        <PersistGate loading={null} persistor={this.props.persistor}>
+          <ConnectedRouter history={this.props.history}>
+            <Nav />
+          </ConnectedRouter>
+        </PersistGate>
       </Provider>
     )
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default connect()(App)
