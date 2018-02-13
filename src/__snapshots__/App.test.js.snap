@@ -164,6 +164,22 @@ exports[`matches snapshot 1`] = `
                   }
                 }
               >
+<<<<<<< HEAD
+                <styled.div>
+                  <div
+                    className="sc-VigVT kpqotZ"
+                  >
+                    <styled.div>
+                      <div
+                        className="sc-jTzLTM gOqUIa"
+                      >
+                        <Styled(styled.div)>
+                          <styled.div
+                            className="sc-jzJRlG enxKql"
+                          >
+                            <div
+                              className="sc-jzJRlG enxKql sc-fjdhpX gIIVcx"
+=======
                 <Navigator
                   history={
                     Object {
@@ -213,6 +229,7 @@ exports[`matches snapshot 1`] = `
                           <Styled(styled.div)>
                             <styled.div
                               className="sc-iwsKbI jQhHGA"
+>>>>>>> development
                             >
                               <div
                                 className="sc-iwsKbI jQhHGA sc-dnqmqq cbdZBN"
@@ -227,6 +244,17 @@ exports[`matches snapshot 1`] = `
                                     exact={true}
                                     path="/"
                                   >
+<<<<<<< HEAD
+                                    <Link
+                                      className="sc-kAzzGY gOOAQV"
+                                      replace={false}
+                                      to="/"
+                                    >
+                                      <a
+                                        className="sc-kAzzGY gOOAQV"
+                                        href="/"
+                                        onClick={[Function]}
+=======
                                     <Styled(Link)
                                       className=""
                                       to="/"
@@ -235,6 +263,7 @@ exports[`matches snapshot 1`] = `
                                         className="sc-gqjmRU iipNCQ"
                                         replace={false}
                                         to="/"
+>>>>>>> development
                                       >
                                         <a
                                           className="sc-gqjmRU iipNCQ"
@@ -254,6 +283,17 @@ exports[`matches snapshot 1`] = `
                                   <Route
                                     path="/other1"
                                   >
+<<<<<<< HEAD
+                                    <Link
+                                      className="sc-kAzzGY gOOAQV"
+                                      replace={false}
+                                      to="/other1"
+                                    >
+                                      <a
+                                        className="sc-kAzzGY gOOAQV"
+                                        href="/other1"
+                                        onClick={[Function]}
+=======
                                     <Styled(Link)
                                       className=""
                                       to="/other1"
@@ -262,6 +302,7 @@ exports[`matches snapshot 1`] = `
                                         className="sc-gqjmRU iipNCQ"
                                         replace={false}
                                         to="/other1"
+>>>>>>> development
                                       >
                                         <a
                                           className="sc-gqjmRU iipNCQ"
@@ -281,6 +322,77 @@ exports[`matches snapshot 1`] = `
                                   <Route
                                     path="/other2"
                                   >
+<<<<<<< HEAD
+                                    <Link
+                                      className="sc-kAzzGY gOOAQV"
+                                      replace={false}
+                                      to="/other2"
+                                    >
+                                      <a
+                                        className="sc-kAzzGY gOOAQV"
+                                        href="/other2"
+                                        onClick={[Function]}
+                                      >
+                                        Other 2
+                                      </a>
+                                    </Link>
+                                  </Styled(Link)>
+                                </Route>
+                              </NavLink>
+                            </div>
+                          </styled.div>
+                        </Styled(styled.div)>
+                        <Styled(styled.div)>
+                          <styled.div
+                            className="sc-cSHVUG CAuLq"
+                          >
+                            <div
+                              className="sc-cSHVUG CAuLq sc-fjdhpX gIIVcx"
+                            >
+                              <NavLink
+                                exact={true}
+                                label="Login"
+                                to="/login"
+                              >
+                                <Route
+                                  exact={true}
+                                  path="/login"
+                                >
+                                  <Styled(Link)
+                                    className=""
+                                    to="/login"
+                                  >
+                                    <Link
+                                      className="sc-kAzzGY gOOAQV"
+                                      replace={false}
+                                      to="/login"
+                                    >
+                                      <a
+                                        className="sc-kAzzGY gOOAQV"
+                                        href="/login"
+                                        onClick={[Function]}
+                                      >
+                                        Login
+                                      </a>
+                                    </Link>
+                                  </Styled(Link)>
+                                </Route>
+                              </NavLink>
+                            </div>
+                          </styled.div>
+                        </Styled(styled.div)>
+                      </div>
+                    </styled.div>
+                    <Switch>
+                      <Route
+                        component={[Function]}
+                        computedMatch={
+                          Object {
+                            "isExact": true,
+                            "params": Object {},
+                            "path": "/",
+                            "url": "/",
+=======
                                     <Styled(Link)
                                       className=""
                                       to="/other2"
@@ -353,6 +465,7 @@ exports[`matches snapshot 1`] = `
                               "path": "/",
                               "url": "/",
                             }
+>>>>>>> development
                           }
                           exact={true}
                           location={
@@ -363,11 +476,24 @@ exports[`matches snapshot 1`] = `
                               "state": undefined,
                             }
                           }
+<<<<<<< HEAD
+                        }
+                        path="/"
+                      >
+                        <styled.div>
+                          <div
+                            className="sc-kgoBCf hIFMFY"
+                          >
+                            <HelmetWrapper
+                              defer={true}
+                              encodeSpecialCharacters={true}
+=======
                           path="/"
                         >
                           <styled.div>
                             <div
                               className="sc-VigVT lnHQkM"
+>>>>>>> development
                             >
                               <HelmetWrapper
                                 defer={true}
@@ -488,6 +614,31 @@ exports[`matches snapshot 1`] = `
                                       <styled.div
                                         className="sc-htpNat hTNTjW"
                                       >
+<<<<<<< HEAD
+                                        <h1>
+                                          React Template
+                                        </h1>
+                                      </div>
+                                    </styled.div>
+                                  </Styled(styled.div)>
+                                </Home>
+                              </Connect(Home)>
+                            </Route>
+                          </div>
+                        </styled.div>
+                      </Route>
+                    </Switch>
+                    <styled.div>
+                      <div
+                        className="sc-kGXeez jHtSAs"
+                      >
+                        <Styled(styled.div)>
+                          <styled.div
+                            className="sc-dxgOiQ hTjMfW"
+                          >
+                            <div
+                              className="sc-dxgOiQ hTjMfW sc-kpOJdX jyuchV"
+=======
                                         <div
                                           className="sc-htpNat hTNTjW sc-bdVaJa cljovs"
                                         >
@@ -511,6 +662,7 @@ exports[`matches snapshot 1`] = `
                           <Styled(styled.div)>
                             <styled.div
                               className="sc-jzJRlG enxKql"
+>>>>>>> development
                             >
                               <div
                                 className="sc-jzJRlG enxKql sc-fjdhpX gIIVcx"
@@ -519,6 +671,26 @@ exports[`matches snapshot 1`] = `
                                   label="Google"
                                   to="https://google.com"
                                 >
+<<<<<<< HEAD
+                                  <a
+                                    className="sc-jKJlTe hyvdBm"
+                                    href="https://google.com"
+                                    target="_blank"
+                                  >
+                                    Google
+                                  </a>
+                                </styled.a>
+                              </FooterLink>
+                            </div>
+                          </styled.div>
+                        </Styled(styled.div)>
+                        <Styled(styled.div)>
+                          <styled.div
+                            className="sc-ckVGcZ foYhJp"
+                          >
+                            <div
+                              className="sc-ckVGcZ foYhJp sc-kpOJdX jyuchV"
+=======
                                   <styled.a
                                     href="https://google.com"
                                     target="_blank"
@@ -538,6 +710,7 @@ exports[`matches snapshot 1`] = `
                           <Styled(styled.div)>
                             <styled.div
                               className="sc-cSHVUG CAuLq"
+>>>>>>> development
                             >
                               <div
                                 className="sc-cSHVUG CAuLq sc-fjdhpX gIIVcx"
@@ -546,7 +719,12 @@ exports[`matches snapshot 1`] = `
                                   label="Github"
                                   to="https://github.com/negebauer/react-template"
                                 >
+<<<<<<< HEAD
+                                  <a
+                                    className="sc-jKJlTe hyvdBm"
+=======
                                   <styled.a
+>>>>>>> development
                                     href="https://github.com/negebauer/react-template"
                                     target="_blank"
                                   >
