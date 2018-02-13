@@ -12,14 +12,11 @@ const api = new Api(process.env.REACT_APP_API || "http://localhost:3000")
 
 // Redux required objects
 const initialState = {}
-const store = configureStore(initialState, history, { api })
+const { store, persistor } = configureStore(initialState, history, { api })
 
-// App general settings
-const options = { hydratation: { blacklist: ["hydratation", "router"] } }
-
-devlog("index.js", "store", store, "options", options)
+devlog("index.js", "store", store, "persistor", persistor)
 
 export default ReactDOM.render(
-  <App store={store} options={options} history={history} />,
+  <App store={store} history={history} persistor={persistor} />,
   document.getElementById("root") || document.createElement("root")
 )
