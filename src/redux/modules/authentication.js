@@ -80,7 +80,7 @@ export function loginUser(creds) {
 
 export function logoutUser() {
   return async dispatch => {
-    dispatch({ type: "CLEAR_STORE" })
+    dispatch({ type: "RESET" })
     dispatch(push(routes.loginPath))
   }
 }
