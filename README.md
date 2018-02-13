@@ -11,7 +11,7 @@ Copy and run this script
 git clone https://github.com/gsulloa/react-template.git
 cd react-template
 yarn
-yarn start
+yarn dev
 ```
 
 ### Acknowledgements
