@@ -7,4 +7,4 @@ const shouldDev = !isTest && isDev
 
 export const devlog = (...logs) => shouldDev && console.log(...logs)
 
-export const devlogerror = err => shouldDev && console.log(err.message || err)
+export const devlogerror = (...logs) => shouldDev && console.error(...logs)
