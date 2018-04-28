@@ -2,8 +2,9 @@ import { devlog } from "./utils/log"
 import axios from "axios"
 
 export default class Api {
-  constructor(baseUrl) {
+  constructor(baseUrl, token) {
     this.baseUrl = baseUrl
+    this.token = token
   }
   request = async request => {
     try {
@@ -15,10 +16,14 @@ export default class Api {
     }
   }
 
+  withToken = token => new Api(this.url, token)
+
   url = url => `${this.baseUrl}${url}`
   generateHeader = () => ({
     "Content-Type": "application/json",
+    Authorization: this.token && `Bearer ${this.token}`,
   })
+
   generateInstance = () => {
     return axios.create({
       baseURL: this.baseUrl,
@@ -26,7 +31,7 @@ export default class Api {
     })
   }
   get = async (url, params) =>
-    this.request(this.generateInstance().get(url, { params }));
+    this.request(this.generateInstance().get(url, { params }))
   post = async (url, body) =>
     this.request(this.generateInstance().post(url, body))
   del = async url => this.request(this.generateInstance().delete(url))
